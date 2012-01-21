@@ -1,0 +1,21 @@
+#!/bin/bash
+#*******************************************************#
+# @author Hüseyin BABAL <turkiye.java@gmail.com>        #
+# sshcon lets you manage your ssh connection operations #
+# easily. Only thing you need to do is setting up your  #
+# conf file "addresses.in" and copy "sshcon" and        #
+# "addresses.in to /usr/local/bin/"                     #
+#*******************************************************#
+
+if [ $# -eq 1 ]
+then
+	addressline=$(grep $1 /usr/local/bin/addresses.in)
+	parsedline=(`echo $addressline | tr ',' ' '`)
+        hostname=${parsedline[1]}
+	username=${parsedline[2]}
+	password=${parsedline[3]}
+	sshpass -p $password ssh $username@$hostname
+else
+	echo "You must enter connection name"
+
+fi

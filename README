@@ -1,0 +1,32 @@
+=== sshcon ===
+Contributors: Hüseyin BABAL <turkiye.java@gmail.com>
+Website: http://www.omgphp.com/
+
+Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+
+== Description ==
+
+sshcon lets you manage your ssh connections easily
+
+== Requirements ==
+
+sshpass
+
+== Installation ==
+
+
+1. Copy "sshcon" and "addresses.in" to /usr/local/bin/ 
+2. Make the script executable (chmod +x sshcon)
+3. Edit your addresses.in
+
+"addresses.in" has configuration for each ssh connection like below
+
+ALIAS,IP_ADDRESS,USER_NAME,PASSWORD
+
+== Example ==
+
+MYSSH,XX.XX.XX.XX,username,password
+
+== Usage ==
+
+sshcon MYSSH

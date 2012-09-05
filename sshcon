@@ -1,6 +1,6 @@
 #!/bin/bash
 #*******************************************************#
-# @author Hüseyin BABAL <turkiye.java@gmail.com>        #
+# @author Hüseyin BABAL <huseyinbabal88@gmail.com>        #
 # sshcon lets you manage your ssh connection operations #
 # easily. Only thing you need to do is setting up your  #
 # conf file "addresses.in" and copy "sshcon" and        #
